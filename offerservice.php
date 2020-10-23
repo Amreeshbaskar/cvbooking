@@ -47,6 +47,8 @@
  <div class="container">
 
  <button type="button" class="btn btn-info" ng-click="myFunc()">Freight Calculator</button>
+ <button type="button" class="btn btn-info" ng-click="cash()">Payment by Cash</button>  
+ <button type="button" class="btn btn-info" ng-click="card()">Payment by Card</button>
    <div ng-show="showMe">
   <ul class="list-group" style="width:300px;">
 <br>
@@ -57,7 +59,7 @@
  <div ng-show="showMe1">
     <div class="alert alert-danger">
   <b>{{" Freight: "+km*10}}</b></div>
-  
+  <p>{{"Payment amount :"}} {{mode1}}</p>
   </div>
   </div>
    
@@ -106,11 +108,19 @@ app.controller('myCtrl', function($scope, $timeout)  {
 	
 		
     }
-	
+	$scope.mode = ' select payment type ';
+    $scope.cash = function() {
+        $scope.mode = 0;
+		$scope.mode1 =$scope.mode+$scope.km*10
+    };
+    $scope.card = function() {
+        $scope.mode = 20;
+		$scope.mode1 =$scope.mode+$scope.km*10
+
+    };
 
 
 });
-
 </script>
 
 
