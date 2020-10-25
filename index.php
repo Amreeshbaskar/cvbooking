@@ -32,7 +32,7 @@
 </nav>
 <div class="jumbotron jumbotron-fluid">
 <div class="row">
-  <center><h3><b>Welcome! to Commercial Vehicle Booking Site<b></h3></center>
+  <center><h3><b>Welcome! to Commercial Vehicle Booking Site</b></h3></center>
  
 
   
@@ -134,6 +134,15 @@ app.controller('myCtrl', function($scope, $timeout)  {
  </div>
 
  <div class="col-sm-4 text-left">
+ <p><b>FOR ANY QUERIES REACH US IN</b></p>
+ <ul class="list-group" style="width:350px;">
+   <li class="list-group-item list-group-item-info"><span class="glyphicon glyphicon-envelope"><b>&nbsp;cvbooking@gmail.com</b></span>
+   </li>
+   </ul> 
+   <ul class="list-group" style="width:350px;">
+   <li class="list-group-item list-group-item-info"><span class="glyphicon glyphicon-phone"><b>&nbsp;91 9442804185</b></span>
+   </li>
+   </ul>
  </div>
 </div>
 </body>
